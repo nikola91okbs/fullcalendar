@@ -24,7 +24,7 @@ class UserController extends Controller
             return response()->json(['error' => 'could_not_create_token'], 500);
         }
 
-        return response()->json(compact('token')) . print("<h1><a href='/home/?token=$token'>Go to the home page.</a></h1>");
+        return redirect('/home?token=' . $token);
     }
 
     public function register(Request $request)
@@ -47,7 +47,7 @@ class UserController extends Controller
 
         $token = JWTAuth::fromUser($user);
 
-        return response()->json(compact('user','token'),201);
+        return redirect('/login'); //->with('success', 'Succesful registration! Now you can login.'); //response()->json(compact('user','token'),201);
     }
 
     public function getAuthenticatedUser()
@@ -70,17 +70,17 @@ class UserController extends Controller
     }
 
     public function getRememberToken()
-	{
-	    return $this->remember_token;
-	}
+    {
+        return $this->remember_token;
+    }
 
-	public function setRememberToken($value)
-	{
-	    $this->remember_token = $value;
-	}
+    public function setRememberToken($value)
+    {
+        $this->remember_token = $value;
+    }
 
-	public function getRememberTokenName()
-	{
-	    return 'remember_token';
-	}
+    public function getRememberTokenName()
+    {
+        return 'remember_token';
+    }
 }
