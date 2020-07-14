@@ -11,7 +11,12 @@ sudo apt install docker
 sudo apt install docker-compose
 
 #	permissions for the project
-# chown -R 755 ../
+chown -R www-data:www-data ../
+usermod -a -G www-data root
+chmod -R 777 ../
+chown -R root:www-data ../
+chgrp -R www-data ../
+chmod -R ug+rwx ../
 
 #	start docker containers
 docker-compose up -d apache2 mysql phpmyadmin redis workspace
