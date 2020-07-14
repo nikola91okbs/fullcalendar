@@ -11,7 +11,7 @@ cp .env.example .env
 php artisan config:clear
 php artisan cache:clear
 
-php artisan migrate
+php artisan migrate:fresh
 
 #	permissions
 chown -R www-data:www-data /var/www
