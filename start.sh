@@ -8,12 +8,13 @@ apt install -y composer
 cp .env.example .env
 composer install
 
+#	maintaince mode
+php artisan down
+
 php artisan config:clear
 php artisan cache:clear
 
-php artisan migrate:fresh
+php artisan migrate
 
-#	permissions
-# chown -R www-data:www-data /var/www
-# usermod -a -G www-data root
-# chown -R 777 /var/www
+#	production mode
+php artisan up
