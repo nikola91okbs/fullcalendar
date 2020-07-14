@@ -20,7 +20,7 @@ It will install Docker, if it is not already installed, configure whole applicat
 
 Create a profile or two, and you can start poplating event planner.
 
-##Explanation of the code
+## Explanation of the code
 Project uses PHP framework Laravel alongside with JWT token authentication and Laradock, Docker setup for Laravel.
 
 It also uses Fullcalendar.io package, Bootstrap modal's alongside with a JQuery, to display the calendar.
