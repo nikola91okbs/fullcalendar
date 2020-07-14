@@ -30,7 +30,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-##Final notes
+## Final notes
 I was not sure what was required, specially in regards to JWT, should I implement it in cookies or session, or to leave it in the GET parameter, which I did.
 I can use it in headers, but it is not seems like the best idea.
 
