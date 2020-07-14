@@ -14,6 +14,6 @@ php artisan cache:clear
 php artisan migrate:fresh
 
 #	permissions
-chown -R www-data:www-data /var/www
-usermod -a -G www-data root
-chown -R 777 /var/www
+# chown -R www-data:www-data /var/www
+# usermod -a -G www-data root
+# chown -R 777 /var/www
