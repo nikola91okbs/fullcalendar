@@ -7,6 +7,10 @@ apt install -y composer
 
 composer install
 cp .env.example .env
+
+php artisan config:clear
+php artisan cache:clear
+
 php artisan migrate
 
 #	permissions
