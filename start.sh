@@ -5,8 +5,8 @@
 	#	probably already installed
 apt install -y composer
 
-composer install
 cp .env.example .env
+composer install
 
 php artisan config:clear
 php artisan cache:clear
