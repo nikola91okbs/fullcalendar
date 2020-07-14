@@ -11,4 +11,4 @@ php artisan migrate
 
 #	permissions
 chown -R www-data:www-data /var/www
-sudo usermod -a -G www-data root
+usermod -a -G www-data root
