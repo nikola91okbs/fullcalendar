@@ -1,6 +1,9 @@
-# include Laradock
-#git clone https://github.com/Laradock/laradock.git
+#	after git clone --recursive https://github.com/nikola91okbs/fullcalendar.git
 
-composer install
+#	install docker
+sudo apt install docker
+sudo apt install docker-compose
 
-php artisan migrate
+docker-compose up -d apache2 mysql phpmyadmin redis workspace
+
+docker-compose exec bash /var/www/start.sh
