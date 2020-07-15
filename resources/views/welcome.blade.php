@@ -81,10 +81,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Event planner
                 </div>
 
-                <b>{{ \Session::has('success') }}</b>
+                <b>@if(\Session::has('success')) {{ session('success') }} @endif</b>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>

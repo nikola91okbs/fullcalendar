@@ -20,9 +20,4 @@ class PageController extends Controller
     {
     	return view('auth.login');
     }
-
-    public function calendar()
-    {
-        return view('home');
-    }
 }
