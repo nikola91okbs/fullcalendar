@@ -20,7 +20,7 @@ It will install Docker, if it is not already installed, configure whole applicat
 
 Create a profile or two, and you can start poplating event planner.
 
-##Explanation of the code
+## Explanation of the code
 Project uses PHP framework Laravel alongside with JWT token authentication and Laradock, Docker setup for Laravel.
 
 It also uses Fullcalendar.io package, Bootstrap modal's alongside with a JQuery, to display the calendar.
@@ -30,9 +30,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-##Final notes
+## Final notes
 I was not sure what was required, specially in regards to JWT, should I implement it in cookies or session, or to leave it in the GET parameter, which I did.
-I can use it in headers, but it is not seems like the best idea.
+I can use it in headers, but it didn't seems like the best idea.
 
 So I did what I did, if needed I can change it, it is no problem.
 
